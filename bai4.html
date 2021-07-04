@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinh-Tien-Cap</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bai4.css">
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 main-left">
+                    
+                </div>
+                <div class="col-xl-6 main-right">
+                    <form>
+                        <form>
+                            <div class="form-title">
+                                <h3>Tính tiền cáp</h3>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-12 name-input">
+                                <label for="inputName" >Mã khách hàng:</label>
+                                <input type="text" class="form-control " id="inputName">
+                              </div>
+                            </div>
+                            <fieldset class="form-group row px-1">
+                                <legend class="col-form-label col-sm-4 float-sm-left ">Loại khách hàng:</legend>
+                                <div class="col-sm-8 d-flex justify-content-around">
+                                  <div class="form-check py-2">
+                                    <input class="form-check-input" type="radio" name="LKHRadios" id="nhaDan" value="option1" onclick="document.getElementById('inputSoKetNoi').disabled = true;">
+                                    <label class="form-check-label" for="nhaDan">
+                                      Nhà dân
+                                    </label>
+                                  </div>
+                                  <div class="form-check py-2">
+                                    <input class="form-check-input" type="radio" name="LKHRadios" id="doanhNghiep" value="option2" onclick="document.getElementById('inputSoKetNoi').disabled = false;">
+                                    <label class="form-check-label" for="doanhNghiep">
+                                      Doanh nghiệp
+                                    </label>
+                                  </div>
+                                  
+                                </div>
+                              </fieldset>
+                            <div class="form-row">  
+                                <div class="form-group col-md-12 name-input px-5 ">
+                                    <label for="inputSoKetNoi">Số kết nối:</label>
+                                    <input type="number" class="form-control " id="inputSoKetNoi" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12 name-input">
+                                    <label for="inputSoKenh">Số kênh cao cấp:</label>
+                                    <input type="number" class="form-control " id="inputSoKenh">
+                                </div>
+                            </div>
+                                                  
+                            <!-- <button type="submit" class="btn btn-success">Sign in</button> -->
+                            <div class="row d-flex justify-content-center">
+                                <button type="button" id="btnKetQua" class="btn btn-success">Tính</button>
+                            </div>
+                            <div id="divKQ" class="ketqua"> 
+                              <p>                           
+                                <span id="thongBao" class="thongBao"></span>
+                              </p>
+                            </div>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="./js/bai4.js"></script>
+</body>
+</html>

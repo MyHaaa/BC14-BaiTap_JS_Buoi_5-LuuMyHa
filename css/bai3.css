@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.html, body{
+    font-family: 'Bona Nova', serif;
+    font-size: 18px;
+}
+.main .container{
+    margin-top: 50px;
+    border: 1px solid black;
+    width: 80%;
+}
+.main .main-left{
+    background-image: url(../img/shutterstock-1431185024.png);
+    border-right: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-right .form-title{
+    margin-bottom: 20px;
+}
+.main-right .form-title h3{
+    text-transform: uppercase;
+    text-align: center;
+    color: red;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.main-right form{
+    padding: 30px;
+}
+.name-input{
+    display: flex;
+    
+}
+.name-input input{
+    height: 30px;
+    width: 250px;
+    
+}
+.name-input label{
+    font-size: 19px;
+    padding: 5px;
+    
+}
+
+.ketqua {
+    padding: 9px;
+    background: #e9b3b7;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+ #divKQ{
+    margin-top: 1.5rem;
+    display: none ;
+ }
